@@ -58,16 +58,16 @@ module alu_tb;
 
     initial begin
         // ---- ADD ----
-        alu_in_a = 8'd10;  alu_in_b = 8'd20;  alu_funct = 3'b000;
+        alu_in_a = 8'd10;  alu_in_b = 8'd20;  alu_funct = 3'b101;
         check("ADD basic", 8'd30, 1'b0, 1'b0, 1'b0);
 
-        alu_in_a = 8'd200; alu_in_b = 8'd100; alu_funct = 3'b000; // 300 -> wraps to 44, carry
+        alu_in_a = 8'd200; alu_in_b = 8'd100; alu_funct = 3'b101; // 300 -> wraps to 44, carry
         check("ADD overflow/carry", 8'd44, 1'b0, 1'b1, 1'b0);
 
-        alu_in_a = 8'd0;   alu_in_b = 8'd0;   alu_funct = 3'b000;
+        alu_in_a = 8'd0;   alu_in_b = 8'd0;   alu_funct = 3'b101;
         check("ADD zero result", 8'd0, 1'b1, 1'b0, 1'b0);
 
-        alu_in_a = 8'd200; alu_in_b = 8'd10;  alu_funct = 3'b000; // 210 -> bit7 set, no carry
+        alu_in_a = 8'd200; alu_in_b = 8'd10;  alu_funct = 3'b101; // 210 -> bit7 set, no carry
         check("ADD negative-looking result (bit7 set)", 8'd210, 1'b0, 1'b0, 1'b1);
 
         // ---- SUB ----

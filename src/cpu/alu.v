@@ -24,7 +24,7 @@ module alu (
     output wire       flag_n
 );
 
-    localparam FUNCT_ADD  = 3'b000;
+    localparam FUNCT_ADD  = 3'b101;
     localparam FUNCT_SUB  = 3'b001;
     localparam FUNCT_SHL  = 3'b010;
     localparam FUNCT_SHR  = 3'b011;
