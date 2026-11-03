@@ -30,6 +30,9 @@ module sp_unit #(
 
     input  wire       sp_we,        // 1 = commit adder result into SP (ADDSP only)
     input  wire [7:0] sp_addend,    // signed 8-bit addend (already extended)
+    
+    input wire       sp_direct_we,
+    input wire [7:0] sp_direct_wdata,
 
     output wire [7:0] sp_out,       // current committed SP value
     output wire [7:0] sp_addr_out   // SP + sp_addend (mem address for STORESP/LOADSP,
@@ -41,12 +44,9 @@ module sp_unit #(
     assign sp_addr_out = sp_reg + sp_addend;
 
     always @(posedge clk) begin
-        if (!rst_n) begin
-            sp_reg <= SP_RESET_VAL;
-        end else if (sp_we) begin
-            sp_reg <= sp_addr_out;
-        end
-        // else: hold (STORESP/LOADSP, or any cycle with sp_we=0)
+        if (!rst_n)              sp_reg <= SP_RESET_VAL;
+        else if (sp_direct_we)   sp_reg <= sp_direct_wdata;   // MOV SP,Rd
+        else if (sp_we)          sp_reg <= sp_addr_out;       // ADDSP (unchanged)
     end
 
     assign sp_out = sp_reg;

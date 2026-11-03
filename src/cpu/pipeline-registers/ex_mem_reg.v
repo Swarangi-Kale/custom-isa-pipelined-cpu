@@ -19,6 +19,7 @@ module ex_mem_reg (
     input  wire       dmem_re_in,
     input  wire [1:0] wb_sel_in,
     input  wire       rd_we_in,
+    input  wire [7:0] lr_value_in,
 
     output reg  [7:0] alu_result_out,
     output reg  [7:0] rs2_rdata_out,
@@ -30,7 +31,8 @@ module ex_mem_reg (
     output reg        dmem_we_out,
     output reg        dmem_re_out,
     output reg  [1:0] wb_sel_out,
-    output reg        rd_we_out
+    output reg        rd_we_out,
+    output reg  [7:0] lr_value_out
 );
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) begin
@@ -44,6 +46,7 @@ module ex_mem_reg (
             dmem_re_out       <= 1'b0;
             wb_sel_out        <= 2'b00;
             rd_we_out         <= 1'b0;
+            lr_value_out      <= 1'b0; 
         end else begin
             alu_result_out    <= alu_result_in;
             rs2_rdata_out     <= rs2_rdata_in;
@@ -55,6 +58,7 @@ module ex_mem_reg (
             dmem_re_out       <= dmem_re_in;
             wb_sel_out        <= wb_sel_in;
             rd_we_out         <= rd_we_in;
+            lr_value_out      <= lr_value_in;
         end
     end
 endmodule

@@ -1,0 +1,33 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Thu Oct  8 12:07:40 2026
+| Host         : DESKTOP-FEOD20V running 64-bit major release  (build 9200)
+| Command      : report_utilization -hierarchical -hierarchical_depth 6 -file D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/synth_reports/new/hw_util_full.txt
+| Design       : processor_hw_context_switch
+| Device       : xc7a12ticsg325-1L
+| Speed File   : -1L
+| Design State : Synthesized
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Utilization Design Information
+
+Table of Contents
+-----------------
+1. Utilization by Hierarchy
+
+1. Utilization by Hierarchy
+---------------------------
+
++---------------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+|             Instance            |       Module       | Total LUTs | Logic LUTs | LUTRAMs | SRLs |  FFs | RAMB36 | RAMB18 | DSP Blocks |
++---------------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+| processor_hw_context_switch     |              (top) |       1369 |       1369 |       0 |    0 | 2336 |      0 |      0 |          0 |
+|   (processor_hw_context_switch) |              (top) |         86 |         86 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   u_alu                         |                alu |         88 |         88 |       0 |    0 |    0 |      0 |      0 |          0 |
+|   u_dmem                        |        data_memory |        850 |        850 |       0 |    0 | 2048 |      0 |      0 |          0 |
+|   u_id_ex                       | id_ex_reg_modified |         62 |         62 |       0 |    0 |   61 |      0 |      0 |          0 |
+|   u_rf                          |           reg_bank |         61 |         61 |       0 |    0 |   64 |      0 |      0 |          0 |
++---------------------------------+--------------------+------------+------------+---------+------+------+--------+--------+------------+
+
+

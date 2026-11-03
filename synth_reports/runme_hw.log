@@ -1,0 +1,376 @@
+
+*** Running vivado
+    with args -log processor_hw_context_switch.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_hw_context_switch.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Sat Oct  3 16:44:49 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source processor_hw_context_switch.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.srcs/utils_1/imports/synth_1/processor_pipel_haz.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.srcs/utils_1/imports/synth_1/processor_pipel_haz.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top processor_hw_context_switch -part xc7a12ticsg325-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 11484
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1070.809 ; gain = 529.961
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'fsm_active', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:67]
+INFO: [Synth 8-11241] undeclared symbol 'ex_ctx_restore', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:67]
+INFO: [Synth 8-11241] undeclared symbol 'fsm_save_done', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:87]
+INFO: [Synth 8-11241] undeclared symbol 'fsm_restore_done', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:87]
+INFO: [Synth 8-11241] undeclared symbol 'ex_rd_addr', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:187]
+INFO: [Synth 8-11241] undeclared symbol 'ex_dmem_re', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:188]
+INFO: [Synth 8-11241] undeclared symbol 'ex_rd_we', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:189]
+WARNING: [Synth 8-8895] 'ex_rd_addr' is already implicitly declared on line 187 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:218]
+WARNING: [Synth 8-8895] 'ex_dmem_re' is already implicitly declared on line 188 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:222]
+WARNING: [Synth 8-8895] 'ex_rd_we' is already implicitly declared on line 189 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:225]
+WARNING: [Synth 8-8895] 'ex_ctx_restore' is already implicitly declared on line 67 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:230]
+WARNING: [Synth 8-8895] 'fsm_active' is already implicitly declared on line 67 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:287]
+WARNING: [Synth 8-8895] 'fsm_save_done' is already implicitly declared on line 87 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:288]
+WARNING: [Synth 8-8895] 'fsm_restore_done' is already implicitly declared on line 87 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:288]
+INFO: [Synth 8-11241] undeclared symbol 'ex_rs1_corrected', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:297]
+INFO: [Synth 8-11241] undeclared symbol 'ex_sp_out', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:298]
+INFO: [Synth 8-11241] undeclared symbol 'mem_rd_addr', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:329]
+INFO: [Synth 8-11241] undeclared symbol 'mem_rd_we', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:330]
+INFO: [Synth 8-11241] undeclared symbol 'mem_wb_sel', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:344]
+INFO: [Synth 8-11241] undeclared symbol 'mem_alu_result', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:345]
+INFO: [Synth 8-11241] undeclared symbol 'mem_ext_value', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:349]
+INFO: [Synth 8-11241] undeclared symbol 'mem_lr_value', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:350]
+WARNING: [Synth 8-8895] 'ex_rs1_corrected' is already implicitly declared on line 297 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:355]
+WARNING: [Synth 8-8895] 'ex_sp_out' is already implicitly declared on line 298 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:401]
+INFO: [Synth 8-11241] undeclared symbol 'mem_dmem_rdata', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:421]
+WARNING: [Synth 8-8895] 'mem_alu_result' is already implicitly declared on line 345 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:486]
+WARNING: [Synth 8-8895] 'mem_ext_value' is already implicitly declared on line 349 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:486]
+WARNING: [Synth 8-8895] 'mem_rd_addr' is already implicitly declared on line 329 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:487]
+WARNING: [Synth 8-8895] 'mem_wb_sel' is already implicitly declared on line 344 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:489]
+WARNING: [Synth 8-8895] 'mem_rd_we' is already implicitly declared on line 330 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:490]
+WARNING: [Synth 8-8895] 'mem_lr_value' is already implicitly declared on line 350 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:491]
+WARNING: [Synth 8-8895] 'mem_dmem_rdata' is already implicitly declared on line 421 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:532]
+WARNING: [Synth 8-6901] identifier 'gie_out' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:47]
+WARNING: [Synth 8-6901] identifier 'fsm_active' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:47]
+WARNING: [Synth 8-6901] identifier 'id_pc' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:52]
+WARNING: [Synth 8-6901] identifier 'fsm_save_done' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:56]
+WARNING: [Synth 8-6901] identifier 'fsm_restore_done' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:56]
+WARNING: [Synth 8-6901] identifier 'fsm_restore_done' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:58]
+WARNING: [Synth 8-6901] identifier 'mem_dmem_rdata' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:58]
+WARNING: [Synth 8-6901] identifier 'fsm_save_done' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:59]
+WARNING: [Synth 8-6901] identifier 'ex_ctx_restore' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:62]
+WARNING: [Synth 8-6901] identifier 'fsm_active' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:62]
+WARNING: [Synth 8-6901] identifier 'fsm_save_read_gpr' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:199]
+WARNING: [Synth 8-6901] identifier 'fsm_gpr_addr' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:199]
+WARNING: [Synth 8-6901] identifier 'fsm_restore_write_gpr' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:200]
+WARNING: [Synth 8-6901] identifier 'fsm_gpr_addr' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:200]
+WARNING: [Synth 8-6901] identifier 'fsm_restore_write_gpr' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:201]
+WARNING: [Synth 8-6901] identifier 'mem_dmem_rdata' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:201]
+WARNING: [Synth 8-6901] identifier 'fsm_restore_write_gpr' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:202]
+INFO: [Synth 8-6157] synthesizing module 'processor_hw_context_switch' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:22]
+INFO: [Synth 8-6157] synthesizing module 'pc_register' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pc_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc_register' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pc_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/instr_mem.v:19]
+	Parameter INIT_FILE bound to: prog_hw.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'prog_hw.mem' is read successfully [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/instr_mem.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/instr_mem.v:19]
+INFO: [Synth 8-6157] synthesizing module 'if_id_reg_modified' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/if_id_reg_modified.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_reg_modified' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/if_id_reg_modified.v:18]
+INFO: [Synth 8-6157] synthesizing module 'control_unit_pipelined' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/control_unit_pipelined.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit_pipelined' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/control_unit_pipelined.v:16]
+INFO: [Synth 8-6157] synthesizing module 'sign_extension_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sign_extension_unit.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extension_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sign_extension_unit.v:33]
+INFO: [Synth 8-6157] synthesizing module 'mux2to1' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2to1' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'hazard_detection_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/hazard_detection_unit.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_detection_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/hazard_detection_unit.v:42]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/reg_bank.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/reg_bank.v:27]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_reg_modified' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/id_ex_reg_modified.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_reg_modified' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/id_ex_reg_modified.v:24]
+INFO: [Synth 8-6157] synthesizing module 'ctx_switch_fsm' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/ctx_switch_fsm.v:33]
+INFO: [Synth 8-226] default block is never used [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/ctx_switch_fsm.v:65]
+INFO: [Synth 8-6155] done synthesizing module 'ctx_switch_fsm' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/ctx_switch_fsm.v:33]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/forwarding_unit.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/forwarding_unit.v:27]
+INFO: [Synth 8-6157] synthesizing module 'mux4to1' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux4to1.v:10]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4to1' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux4to1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mux2to1__parameterized0' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2to1__parameterized0' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/alu.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/alu.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sp_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sp_unit.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sp_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sp_unit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'lr_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/lr_reg.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'lr_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/lr_reg.v:15]
+INFO: [Synth 8-6157] synthesizing module 'flags_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/flags_reg.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'flags_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/flags_reg.v:25]
+INFO: [Synth 8-6157] synthesizing module 'gie_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/gie_reg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'gie_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/gie_reg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'simple_adder' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/simple_adder.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'simple_adder' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/simple_adder.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/ex_mem_reg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/ex_mem_reg.v:7]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/data_mem.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/data_mem.v:36]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/mem_wb_reg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/mem_wb_reg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'processor_hw_context_switch' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/processor_hw_context_switch.v:22]
+WARNING: [Synth 8-7137] Register save_base_reg in module ctx_switch_fsm has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/ctx_switch_fsm.v:68]
+WARNING: [Synth 8-7137] Register restore_base_reg in module ctx_switch_fsm has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/ctx_switch_fsm.v:85]
+WARNING: [Synth 8-7129] Port id_funct[2] in module hazard_detection_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_funct[1] in module hazard_detection_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[15] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[14] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[13] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[12] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[11] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[10] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[9] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[8] in module sign_extension_unit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1248.754 ; gain = 707.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1248.754 ; gain = 707.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1248.754 ; gain = 707.906
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.srcs/utils_1/imports/synth_1/processor_pipel_haz.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1248.754 ; gain = 707.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1248.754 ; gain = 707.906
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ctx_switch_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                               00
+                    SAVE |                               01 |                               01
+                    WAIT |                               10 |                               10
+                 RESTORE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'ctx_switch_fsm'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 1248.754 ; gain = 707.906
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 7     
+	   2 Input    3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 283   
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	 257 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 27    
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 5     
+	  14 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 9     
+	   4 Input    3 Bit        Muxes := 1     
+	  15 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 4     
+	   4 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 25    
+	  14 Input    1 Bit        Muxes := 13    
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1440.238 ; gain = 899.391
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1449.141 ; gain = 908.293
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1449.305 ; gain = 908.457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:00:59 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     2|
+|4     |LUT2   |    94|
+|5     |LUT3   |    86|
+|6     |LUT4   |    50|
+|7     |LUT5   |   122|
+|8     |LUT6   |  1173|
+|9     |MUXF7  |    28|
+|10    |FDCE   |   176|
+|11    |FDRE   |  2159|
+|12    |IBUF   |     3|
+|13    |OBUF   |    44|
++------+-------+------+
+
+Report Instance Areas: 
++------+-----------+-------------------+------+
+|      |Instance   |Module             |Cells |
++------+-----------+-------------------+------+
+|1     |top        |                   |  3950|
+|2     |  u_alu    |alu                |     8|
+|3     |  u_bta    |simple_adder       |     2|
+|4     |  u_ctxfsm |ctx_switch_fsm     |   321|
+|5     |  u_dmem   |data_memory        |  2737|
+|6     |  u_ex_mem |ex_mem_reg         |   334|
+|7     |  u_flags  |flags_reg          |     9|
+|8     |  u_gie    |gie_reg            |     1|
+|9     |  u_id_ex  |id_ex_reg_modified |   168|
+|10    |  u_if_id  |if_id_reg_modified |    68|
+|11    |  u_lr     |lr_reg             |     8|
+|12    |  u_mem_wb |mem_wb_reg         |    53|
+|13    |  u_pc     |pc_register        |    54|
+|14    |  u_rf     |reg_bank           |   104|
+|15    |  u_sp     |sp_unit            |    35|
++------+-----------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 45 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+Synthesis Optimization Complete : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1625.883 ; gain = 1085.035
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 1640.012 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 40 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1745.984 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7fd2fde3
+INFO: [Common 17-83] Releasing license: Synthesis
+81 Infos, 45 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 1745.984 ; gain = 1211.934
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1745.984 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.runs/synth_1/processor_hw_context_switch.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file processor_hw_context_switch_utilization_synth.rpt -pb processor_hw_context_switch_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Oct  3 16:45:58 2026...

@@ -1,0 +1,333 @@
+
+*** Running vivado
+    with args -log processor_pipel_haz.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source processor_pipel_haz.tcl
+
+
+
+****** Vivado v2025.2 (64-bit)
+  **** SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025
+  **** IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+  **** SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+  **** Start of session at: Thu Oct  8 11:40:06 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source processor_pipel_haz.tcl -notrace
+create_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 525.746 ; gain = 217.418
+Command: read_checkpoint -auto_incremental -incremental D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.srcs/utils_1/imports/synth_1/processor_pipel_haz.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.srcs/utils_1/imports/synth_1/processor_pipel_haz.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top processor_pipel_haz -part xc7a12ticsg325-1L -flatten_hierarchy none
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a12ti'
+INFO: [Device 21-403] Loading part xc7a12ticsg325-1L
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 18788
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.441 ; gain = 539.984
+---------------------------------------------------------------------------------
+INFO: [Synth 8-11241] undeclared symbol 'ex_rd_addr', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:183]
+INFO: [Synth 8-11241] undeclared symbol 'ex_dmem_re', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:184]
+INFO: [Synth 8-11241] undeclared symbol 'ex_rd_we', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:185]
+WARNING: [Synth 8-8895] 'ex_rd_addr' is already implicitly declared on line 183 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:209]
+WARNING: [Synth 8-8895] 'ex_dmem_re' is already implicitly declared on line 184 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:213]
+WARNING: [Synth 8-8895] 'ex_rd_we' is already implicitly declared on line 185 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:216]
+INFO: [Synth 8-11241] undeclared symbol 'mem_rd_addr', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:287]
+INFO: [Synth 8-11241] undeclared symbol 'mem_rd_we', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:288]
+INFO: [Synth 8-11241] undeclared symbol 'mem_wb_sel', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:302]
+INFO: [Synth 8-11241] undeclared symbol 'mem_alu_result', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:303]
+INFO: [Synth 8-11241] undeclared symbol 'mem_ext_value', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:307]
+INFO: [Synth 8-11241] undeclared symbol 'mem_lr_value', assumed default net type 'wire' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:308]
+WARNING: [Synth 8-8895] 'mem_alu_result' is already implicitly declared on line 303 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:440]
+WARNING: [Synth 8-8895] 'mem_ext_value' is already implicitly declared on line 307 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:440]
+WARNING: [Synth 8-8895] 'mem_rd_addr' is already implicitly declared on line 287 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:441]
+WARNING: [Synth 8-8895] 'mem_wb_sel' is already implicitly declared on line 302 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:443]
+WARNING: [Synth 8-8895] 'mem_rd_we' is already implicitly declared on line 288 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:444]
+WARNING: [Synth 8-8895] 'mem_lr_value' is already implicitly declared on line 308 [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:445]
+WARNING: [Synth 8-6901] identifier 'gie_out' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:48]
+WARNING: [Synth 8-6901] identifier 'id_pc' is used before its declaration [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:53]
+INFO: [Synth 8-6157] synthesizing module 'processor_pipel_haz' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:22]
+INFO: [Synth 8-6157] synthesizing module 'pc_register' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pc_reg.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'pc_register' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pc_reg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instr_mem' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/instr_mem.v:19]
+	Parameter INIT_FILE bound to: prog_sw.mem - type: string 
+INFO: [Synth 8-3876] $readmem data file 'prog_sw.mem' is read successfully [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/instr_mem.v:41]
+INFO: [Synth 8-6155] done synthesizing module 'instr_mem' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/instr_mem.v:19]
+INFO: [Synth 8-6157] synthesizing module 'if_id_reg_modified' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/if_id_reg_modified.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'if_id_reg_modified' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/if_id_reg_modified.v:18]
+INFO: [Synth 8-6157] synthesizing module 'control_unit_pipelined' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/control_unit_pipelined.v:16]
+INFO: [Synth 8-6155] done synthesizing module 'control_unit_pipelined' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/control_unit_pipelined.v:16]
+WARNING: [Synth 8-7071] port 'ctx_restore' of module 'control_unit_pipelined' is unconnected for instance 'u_ctrl' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:122]
+WARNING: [Synth 8-7023] instance 'u_ctrl' of module 'control_unit_pipelined' has 24 connections declared, but only 23 given [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:122]
+INFO: [Synth 8-6157] synthesizing module 'sign_extension_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sign_extension_unit.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'sign_extension_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sign_extension_unit.v:33]
+INFO: [Synth 8-6157] synthesizing module 'mux2to1' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+	Parameter WIDTH bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2to1' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'hazard_detection_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/hazard_detection_unit.v:42]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_detection_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/hazard_detection_unit.v:42]
+INFO: [Synth 8-6157] synthesizing module 'reg_bank' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/reg_bank.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'reg_bank' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/reg_bank.v:27]
+INFO: [Synth 8-6157] synthesizing module 'id_ex_reg_modified' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/id_ex_reg_modified.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'id_ex_reg_modified' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/id_ex_reg_modified.v:24]
+WARNING: [Synth 8-7071] port 'ctx_restore_in' of module 'id_ex_reg_modified' is unconnected for instance 'u_id_ex' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:222]
+WARNING: [Synth 8-7071] port 'ctx_restore_out' of module 'id_ex_reg_modified' is unconnected for instance 'u_id_ex' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:222]
+WARNING: [Synth 8-7023] instance 'u_id_ex' of module 'id_ex_reg_modified' has 51 connections declared, but only 49 given [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:222]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/forwarding_unit.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/forwarding_unit.v:27]
+INFO: [Synth 8-6157] synthesizing module 'mux4to1' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux4to1.v:10]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux4to1' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux4to1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mux2to1__parameterized0' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+	Parameter WIDTH bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mux2to1__parameterized0' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/mux2to1.v:8]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/alu.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/alu.v:17]
+INFO: [Synth 8-6157] synthesizing module 'sp_unit' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sp_unit.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'sp_unit' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/sp_unit.v:25]
+INFO: [Synth 8-6157] synthesizing module 'lr_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/lr_reg.v:15]
+INFO: [Synth 8-6155] done synthesizing module 'lr_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/lr_reg.v:15]
+INFO: [Synth 8-6157] synthesizing module 'flags_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/flags_reg.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'flags_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/flags_reg.v:25]
+INFO: [Synth 8-6157] synthesizing module 'gie_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/gie_reg.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'gie_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/gie_reg.v:22]
+INFO: [Synth 8-6157] synthesizing module 'simple_adder' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/simple_adder.v:17]
+INFO: [Synth 8-6155] done synthesizing module 'simple_adder' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/simple_adder.v:17]
+INFO: [Synth 8-6157] synthesizing module 'ex_mem_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/ex_mem_reg.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'ex_mem_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/ex_mem_reg.v:7]
+INFO: [Synth 8-6157] synthesizing module 'data_memory' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/data_mem.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'data_memory' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/data_mem.v:36]
+INFO: [Synth 8-6157] synthesizing module 'mem_wb_reg' [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/mem_wb_reg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'mem_wb_reg' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/src_hw_context_sw/cpu/pipeline-registers/mem_wb_reg.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'processor_pipel_haz' (0#1) [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/cpu/processor_pipel_haz.v:22]
+WARNING: [Synth 8-7129] Port id_funct[2] in module hazard_detection_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_funct[1] in module hazard_detection_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[15] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[14] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[13] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[12] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[11] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[10] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[9] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[8] in module sign_extension_unit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1426.859 ; gain = 717.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1426.859 ; gain = 717.402
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1426.859 ; gain = 717.402
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1426.859 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/constraints/timing.xdc]
+Finished Parsing XDC File [D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/constraints/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1506.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.092 . Memory (MB): peak = 1506.719 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a12ticsg325-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Preparing Guide Design
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6895] The reference checkpoint D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.srcs/utils_1/imports/synth_1/processor_pipel_haz.dcp is not suitable for use with incremental synthesis for this design. Please regenerate the checkpoint for this design with -incremental_synth switch in the same Vivado session that synth_design has been run. Synthesis will continue with the default flow
+---------------------------------------------------------------------------------
+Finished Doing Graph Differ : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Preparing Guide Design : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+
+
+Incremental Synthesis Report Summary:
+
+1. Incremental synthesis run: no
+
+   Reason for not running incremental synthesis : 
+
+
+INFO: [Synth 8-7130] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    9 Bit       Adders := 1     
+	   3 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 3     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 281   
+	                3 Bit    Registers := 6     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 25    
++---Muxes : 
+	 257 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 17    
+	   3 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 5     
+	  14 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 6     
+	  15 Input    2 Bit        Muxes := 1     
+	  14 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 19    
+	  14 Input    1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 40 (col length:40)
+BRAMs: 40 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7129] Port id_funct[2] in module hazard_detection_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port id_funct[1] in module hazard_detection_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[15] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[14] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[13] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[12] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[11] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[10] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[9] in module sign_extension_unit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[8] in module sign_extension_unit is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 1506.719 ; gain = 797.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 1577.617 ; gain = 868.160
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:39 ; elapsed = 00:00:42 . Memory (MB): peak = 1605.387 ; gain = 895.930
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1606.375 ; gain = 896.918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1840.418 ; gain = 1130.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1840.418 ; gain = 1130.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1840.418 ; gain = 1130.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |    11|
+|4     |LUT2   |   181|
+|5     |LUT3   |    57|
+|6     |LUT4   |    93|
+|7     |LUT5   |    86|
+|8     |LUT6   |   936|
+|9     |MUXF7  |   280|
+|10    |MUXF8  |   128|
+|11    |FDCE   |   170|
+|12    |FDRE   |  2143|
+|13    |IBUF   |     3|
+|14    |OBUF   |    44|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1840.418 ; gain = 1130.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:45 . Memory (MB): peak = 1840.418 ; gain = 1051.102
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:49 . Memory (MB): peak = 1840.418 ; gain = 1130.961
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 1849.602 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 420 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'processor_pipel_haz' is not ideal for floorplanning, since the cellview 'data_memory' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1853.289 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 94051ec1
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 37 Warnings, 1 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1853.289 ; gain = 1320.926
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1853.289 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/custom_proc/custom_proc.runs/synth_1/processor_pipel_haz.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file processor_pipel_haz_utilization_synth.rpt -pb processor_pipel_haz_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Oct  8 11:41:10 2026...

@@ -52,8 +52,14 @@ module reg_bank (
         end
     end
 
-    // Asynchronous (combinational) reads.
-    assign rs1_rdata = regs[rs1_addr];
-    assign rs2_rdata = regs[rs2_addr];
-
+    // Write-first bypass + R0 hardwired to zero.
+    // R0 always reads 0 regardless of stored content or any same-cycle
+    // write attempt - checked first, so it overrides everything else.
+    // Otherwise, a same-cycle read of the address currently being
+    // written returns the NEW value instead of stale data (needed now
+    // that pipelining creates real distance-3 WB/ID overlaps).
+    assign rs1_rdata = (rs1_addr == 3'b000) ? 8'b0 :
+                        (rd_we && rd_addr == rs1_addr) ? rd_wdata : regs[rs1_addr];
+    assign rs2_rdata = (rs2_addr == 3'b000) ? 8'b0 :
+                        (rd_we && rd_addr == rs2_addr) ? rd_wdata : regs[rs2_addr];
 endmodule

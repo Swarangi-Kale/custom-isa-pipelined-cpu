@@ -1,0 +1,27 @@
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'benchmark_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1686.277 ; gain = 8.297
+run -all
+
+---- switch 1 ----
+  irq_in asserted @ 615000, irq_taken @ 635000, RETI resolved @ 1135000
+  new-task instruction fetched @ 1145000
+  latency from irq_in assertion : 53 cycles
+  latency from irq_taken (Phase D metric): 51 cycles
+
+---- switch 2 ----
+  irq_in asserted @ 1675000, irq_taken @ 1685000, RETI resolved @ 2175000
+  new-task instruction fetched @ 2185000
+  latency from irq_in assertion : 51 cycles
+  latency from irq_taken (Phase D metric): 50 cycles
+
+---- switch 3 ----
+  irq_in asserted @ 2735000, irq_taken @ 2745000, RETI resolved @ 3245000
+  new-task instruction fetched @ 3255000
+  latency from irq_in assertion : 52 cycles
+  latency from irq_taken (Phase D metric): 51 cycles
+
+INFO: worst-case (max) latency from irq_taken across the 3 branches
+      is the number to carry into the Phase D comparison table,
+      since it upper-bounds software-ISR scheduling latency.
+$finish called at time : 3786 ns : File "D:/Embedded_Sys/projects/Custom-isa-pipelined-processor/src/testbenches/scheduler_step_by_step/benchmark.v" Line 206

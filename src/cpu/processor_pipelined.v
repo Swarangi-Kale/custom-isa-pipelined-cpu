@@ -1,4 +1,4 @@
-// -----------------------------------------------------------------------
+// ----------------------------------------------------------------------
 // processor_pipelined.v (PIPELINED - Phase 2)
 //
 // 5-stage pipeline: IF - ID - EX - MEM - WB, built by inserting the four
